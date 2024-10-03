@@ -1,0 +1,110 @@
+{
+    "name": "movientodepersonaje",
+    "maps": [
+        {
+            "name": "movimientodeljugador",
+            "id": "2a463041-ca14-431e-becb-f1376cb5a30c",
+            "actions": [
+                {
+                    "name": "arribayabajo",
+                    "type": "Button",
+                    "id": "e2e5e091-2a09-4fe2-a06c-f4623c4ef895",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "derechayizquierda",
+                    "type": "Button",
+                    "id": "601f50e7-3829-4b9f-a43e-2bfb41b7b4d9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "uso de w y s",
+                    "id": "a73a770a-ec1b-4dc0-a54e-c175d62f2514",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "arribayabajo",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "e5d00a3a-4ffe-4151-9ce2-96561d2e80bd",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "arribayabajo",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "aae4c3d0-f471-4969-8a76-93efaa44f82b",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "arribayabajo",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "usode a y d",
+                    "id": "6b91e8b0-1368-4c58-afb8-6d61df323dc1",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "derechayizquierda",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "f78942ed-b0cf-4dc1-8db7-d1960bdf83bc",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "derechayizquierda",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "e404d362-de0a-47a2-bf3d-d4562439c731",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "derechayizquierda",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "keyboard",
+            "bindingGroup": "keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
